@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+	  <link rel="stylesheet" href="chosen.css">
+	  <script src="jquery-1.11.2.min.js"></script>
+	 <script src="chosen.jquery.js" type="text/javascript"></script>
+
+	</head>
+	<script type="text/javascript">
+	function test(v){
+alert(v)
+
+	}
+	$( document ).ready(function() {
+		$("select").chosen(); 
+  // Handler for .ready() called.
+});
+	
+	</script><style type="text/css" media="all">
+    /* fix rtl for demo */
+    .chosen-rtl .chosen-drop { left: -9000px; }
+  </style>
+	<style >
+	</style>
+
+<body>
+	 <div>
+          <em>Turns This</em>
+          <select data-placeholder="Choose a Country..." onchange="test(this.value)" style="width:350px;" tabindex="1">
+            <option value=""></option>
+            <option value="United States">United States</option>
+            <option value="United Kingdom">United Kingdom</option>
+            <option value="Afghanistan">Afghanistan</option>
+            <option value="Aland Islands">Aland Islands</option>
+            <option value="Albania">Albania</option>
+            <option value="Algeria">Algeria</option>
+            <option value="American Samoa">American Samoa</option>
+            <option value="Andorra">Andorra</option>
+            <option value="Angola">Angola</option>
+          
+          </select>
+        </div>
+	</body>
+
+</html>
